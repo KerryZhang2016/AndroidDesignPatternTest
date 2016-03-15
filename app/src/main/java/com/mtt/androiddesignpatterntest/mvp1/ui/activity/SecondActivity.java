@@ -42,6 +42,12 @@ public class SecondActivity extends AppCompatActivity implements PhoneMsgView, V
         phoneMsgPresenter = new PhoneMsgPresenterImpl(this);
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        phoneMsgPresenter.onDestroy();
+    }
+
     private void initUI() {
         edt_input = (EditText) findViewById(R.id.edt_demo);
         tv_result = (TextView) findViewById(R.id.tv_demo_result);

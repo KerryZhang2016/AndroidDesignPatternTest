@@ -31,6 +31,11 @@ public class PhoneMsgPresenterImpl implements PhoneMsgPresenter, OnPhoneMsgListe
     }
 
     @Override
+    public void onDestroy() {
+        phoneMsgView = null;
+    }
+
+    @Override
     public void onSuccess(PhoneMsg phoneMsg) {
         // view 层做响应
         if(phoneMsgView != null) {

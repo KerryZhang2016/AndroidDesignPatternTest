@@ -10,4 +10,9 @@ public interface PhoneMsgPresenter {
      * 获取手机归属地的逻辑
      * */
     void getPhoneMsg(String num);
+
+    /**
+     * 页面销毁时
+     * */
+    void onDestroy();
 }
