@@ -35,16 +35,16 @@ public class FirstActivity extends AppCompatActivity implements OnPhoneMsgListen
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_first);
+        setContentView(R.layout.activity_demo);
         phoneMsgModel = new PhoneMsgModelImpl();
 
         initUI();
     }
 
     private void initUI() {
-        edt_input = (EditText) findViewById(R.id.edt_first);
-        tv_result = (TextView) findViewById(R.id.tv_first_result);
-        Button btn_go = (Button) findViewById(R.id.btn_first_go);
+        edt_input = (EditText) findViewById(R.id.edt_demo);
+        tv_result = (TextView) findViewById(R.id.tv_demo_result);
+        Button btn_go = (Button) findViewById(R.id.btn_demo_go);
         btn_go.setOnClickListener(this);
 
         loadingDialog = new ProgressDialog(FirstActivity.this);
@@ -81,7 +81,7 @@ public class FirstActivity extends AppCompatActivity implements OnPhoneMsgListen
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.btn_first_go:
+            case R.id.btn_demo_go:
                 loadingDialog.show();
                 if(phoneMsgModel != null) {
                     phoneMsgModel.getPhoneMsg(edt_input.getText().toString().trim(),this);

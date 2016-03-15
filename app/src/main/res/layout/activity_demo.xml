@@ -10,16 +10,17 @@
     tools:context="com.mtt.androiddesignpatterntest.mvc.controller.FirstActivity">
 
     <EditText
-        android:id="@+id/edt_first"
+        android:id="@+id/edt_demo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="phone"
         android:layout_margin="40dp"
         android:gravity="center"
         android:textSize="20sp"
         android:hint="Phone Number"/>
 
     <Button
-        android:id="@+id/btn_first_go"
+        android:id="@+id/btn_demo_go"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dp"
@@ -27,13 +28,13 @@
         android:gravity="center"
         android:text="GO"
         android:textSize="20sp"
-        android:layout_below="@id/edt_first"/>
+        android:layout_below="@id/edt_demo"/>
 
     <TextView
-        android:id="@+id/tv_first_result"
+        android:id="@+id/tv_demo_result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="40dp"
         android:textSize="20sp"
-        android:layout_below="@id/btn_first_go"/>
+        android:layout_below="@id/btn_demo_go"/>
 </RelativeLayout>

@@ -18,7 +18,8 @@
             </intent-filter>
         </activity>
         <activity android:name="com.mtt.androiddesignpatterntest.mvc.controller.FirstActivity">
-
+        </activity>
+        <activity android:name="com.mtt.androiddesignpatterntest.mvp1.ui.activity.SecondActivity">
         </activity>
     </application>
 
